@@ -1,7 +1,6 @@
 function fib(num) {
     if(typeof num == "number" && num > 0 && Number.isInteger(num)){
       let numFib = [];
-      dd(num, numFib);
       if (num == 1){
          numFib[0] = 0;
       } else if (num == 2) {
@@ -17,21 +16,22 @@ function fib(num) {
       let str = "";
       console.log(numFib);
       for(let j = 0; j < numFib.length; j++){
-         if (j == numFib.length - 1){
-            str += `${numFib[j]}`;
-         } else{
-            str += `${numFib[j]} `;
-         }
+         str += `${numFib[j]} `;
+         // if (j == numFib.length - 1){
+         //    str += `${numFib[j]}`;
+         // } else{
+         //    str += `${numFib[j]} `;
+         // }
          // console.log(numFib.length);
          // console.log(`j = ${j}, str = ${str}`);
       }
       // str += numFib.pop();
-      return str;
+      return str.trim();
     } else{
       return "";
     }
 }
-console.log(fib(1.3));
+console.log(fib(10));
 
 
 
