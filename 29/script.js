@@ -49,11 +49,17 @@ function detectPersonalLevel() {
 detectPersonalLevel();
 
 function showMyDB(privat) {
-   if (privat === false) {
+    if (!privat) { //privat === false
       console.log(personalMoveDB);
    } 
 }
 showMyDB(personalMoveDB.privat);
 
+function writeYourGenres(genre){
+   for(let i = 1; i <= 3; i++){
+      genre[i - 1] = prompt(`Ваш любимий жанр під підномером ${i}`);
+   }
+}
+writeYourGenres(personalMoveDB.genres);
 
-console.log(personalMoveDB);
+// console.log(personalMoveDB);
