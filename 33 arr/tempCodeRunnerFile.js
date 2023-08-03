@@ -1,0 +1,1 @@
+delete arr[1]
