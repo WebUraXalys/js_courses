@@ -23,7 +23,7 @@ const personalMoveDB = {
 
 function rememberMyFilm() {
    for(let i = 0; i < numberOfFilms; i++){
-   const question = prompt("Ваш останній прегелянутий фільм?", '').trim(), // видаляє пробіли в кінці впереді але один пробіл між словами не видаляє
+   const question = prompt("Ваш останній прегелянутий фільм?", '').trim(), // видаляє пробіли в кінці і cпереді але один пробіл між словами не видаляє
       level = prompt("Наскільки ви його оцінете?", '');
    if (question == "" || level == "" || question == null || level == null || question.length > 50 || level.length > 50 ){
       i--;
