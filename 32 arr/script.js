@@ -16,9 +16,9 @@ const arr = [1, 3, 2, 6, 9];
 //   console.log(value);
 // }
 
-// arr.forEach((item, i, arr)=>{
-//    console.log(i + ":" + item + " В масиві " + arr);
-// })
+arr.forEach((item, i, arr)=>{
+   console.log(i + ":" + item + " В масиві " + arr);
+})
 
 // let str = prompt("ddt");
 // str = "gsbgsfg     fsbgsfbs    dsggfs gs    sfg  f    "
